@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  text-align: center;
+  border: 2px solid black;
+  background-color: red;
+  padding: 5px;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  letter-spacing: 10px;
+  padding-left: 5px;
+}
+
+
+input[type="text"],
+textarea {
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 2px solid red;
+}
+
+
+#size {
+  background-color: ;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: red;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+form {
+text-align: center;
+  /*max-width: 80vw;*/
+  margin-inline: 20px;
+  padding: 25px;
+  background-color: pink;
+  margin-bottom: 20px;
+}
+
+.check-box {
+    display: inline-block;
+    text-align: left;
+}
+
+.text-area {
+margin-top: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+td,
+th {
+  border: 1px solid red;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: red;
+}
