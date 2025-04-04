@@ -3,25 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Pizza Order</title>
-    <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 50%;
-      }
-
-      td,
-      th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -30,45 +13,51 @@
     <main>
       <h2></h2>
       <form>
-        <label for="name">Name:</label>
+        <label for="name"><strong>Name:</strong></label>
         <input type="text" name="name" id="name" />
+
         <br />
         <br />
-        <label for="size">Pizza size</label>
+
+        <label for="size"><strong>Pizza size</strong></label>
+
         <select id="size">
           <option value="small">Small</option>
           <option value="medium">Medium</option>
           <option value="large">Large</option>
         </select>
-        <p>Pizza Toppings</p>
-        <input type="checkbox" name="pepperoni" id="pepperoni" />
-        <label for="pepperoni">Pepperoni</label>
-        <br />
-        <input type="checkbox" name="green-peppers" id="green-peppers" />
-        <label for="green-peppers">Green Peppers</label>
-        <br />
-        <input type="checkbox" name="mushrooms" id="mushrooms" />
-        <label for="mushrooms">Mushrooms</label>
-        <br />
-        <input type="checkbox" name="extra-cheese" id="extra-cheese" />
-        <label for="extra-cheese">Extra Cheese</label>
-        <br />
-        <input type="checkbox" name="sausage" id="sausage" />
-        <label for="sausage">Sausage</label>
-        <br />
-        <input type="checkbox" name="pineapple" id="pineapple" />
-        <label for="pineapple">Pineapple</label>
-        <br />
-        <br />
-        <label for="instructions">Special Instructions:</label>
-        <br />
-        <textarea name="instructions" id="instructions" rows="4"></textarea>
+        <p><strong>Pizza Toppings</strong></p>
+        <div class="check-box">
+          <input type="checkbox" name="pepperoni" id="pepperoni" />
+          <label for="pepperoni">Pepperoni</label>
+          <br />
+          <input type="checkbox" name="green-peppers" id="green-peppers" />
+          <label for="green-peppers">Green Peppers</label>
+          <br />
+          <input type="checkbox" name="mushrooms" id="mushrooms" />
+          <label for="mushrooms">Mushrooms</label>
+          <br />
+          <input type="checkbox" name="extra-cheese" id="extra-cheese" />
+          <label for="extra-cheese">Extra Cheese</label>
+          <br />
+          <input type="checkbox" name="sausage" id="sausage" />
+          <label for="sausage">Sausage</label>
+          <br />
+          <input type="checkbox" name="pineapple" id="pineapple" />
+          <label for="pineapple">Pineapple</label>
+        </div>
         <br />
         <br />
-        <input type="submit" value="submit" />
+        <label for="instructions"><strong>Special Instructions:</strong></label>
+
+        <br />
+        <div class="text-area">
+          <textarea name="instructions" id="instructions" rows="4"></textarea>
+        </div>
+
+        <button>Submit</button>
       </form>
-      <br />
-      <br />
+
       <table>
         <tr>
           <th>Name</th>
@@ -95,7 +84,7 @@
           <td>well done</td>
         </tr>
       </table>
-      <br>
+      <br />
     </main>
     <footer>&copy; March 2025 Cohort</footer>
   </body>
