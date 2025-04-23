@@ -10,14 +10,15 @@ function submitFormEventHandler(event) {
   let instructionsElement = document.getElementById("instructions").value;
 
   let toppings = [];
-  if (document.getElementById("pepperoni").checked) toppings.push("Pepperoni");
-  if (document.getElementById("green-peppers").checked)
-    toppings.push("Green Peppers");
-  if (document.getElementById("mushrooms").checked) toppings.push("Mushrooms");
-  if (document.getElementById("extra-cheese").checked)
-    toppings.push("Extra Cheese");
-  if (document.getElementById("sausage").checked) toppings.push("Sausage");
-  if (document.getElementById("pineapple").checked) toppings.push("Pineapple");
+
+  let pizzaToppings = document.querySelectorAll(
+    ".check-box input[type='checkbox']"
+  );
+  for (let i = 0; i < pizzaToppings.length; i++) {
+    if (pizzaToppings[i].checked) {
+      toppings.push(pizzaToppings[i].labels[0].innerText);
+    }
+  }
 
   let newRow = tableElement.insertRow();
   let nameCell = newRow.insertCell();
