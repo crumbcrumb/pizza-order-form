@@ -1,9 +1,9 @@
 let submitFormElement = document.getElementById("submit-form");
 let tableElement = document.getElementById("table");
 
-submitFormElement.addEventListener("submit", submitFormEventHandler);
+submitFormElement.addEventListener("submit", handleSubmitForm);
 
-function submitFormEventHandler(event) {
+function handleSubmitForm(event) {
   event.preventDefault();
   let nameElement = document.getElementById("name").value;
   let SizeElement = document.getElementById("size").value;
@@ -11,12 +11,12 @@ function submitFormEventHandler(event) {
 
   let toppings = [];
 
-  let pizzaToppings = document.querySelectorAll(
+  let pizzaToppingsElement = document.querySelectorAll(
     ".check-box input[type='checkbox']"
   );
-  for (let i = 0; i < pizzaToppings.length; i++) {
-    if (pizzaToppings[i].checked) {
-      toppings.push(pizzaToppings[i].labels[0].innerText);
+  for (let i = 0; i < pizzaToppingsElement.length; i++) {
+    if (pizzaToppingsElement[i].checked) {
+      toppings.push(pizzaToppingsElement[i].labels[0].innerText);
     }
   }
 
