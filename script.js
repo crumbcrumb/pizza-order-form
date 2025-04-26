@@ -28,7 +28,7 @@ function handleSubmitForm(event) {
 
   nameCell.textContent = nameElement;
   sizeCell.textContent = SizeElement;
-  toppingsCell.textContent = toppings.join(",");
+  toppingsCell.textContent = toppings.join(", ");
   instructionsCell.textContent = instructionsElement;
 
   event.target.reset();
