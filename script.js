@@ -33,3 +33,20 @@ function handleSubmitForm(event) {
 
   event.target.reset();
 }
+
+
+//instead of insertRow and insertCell i tried
+
+// let newTableRowElement = document.createElement("tr")
+// let nameCell = document.createElement("td")
+// let sizeCell = document.createElement("td")
+// let toppingsCell = document.createElement("td")
+// let instructionsCell = document.createElement("td")
+
+// newTableRowElement.appendChild(nameCell);
+// newTableRowElement.appendChild(sizeCell);
+// newTableRowElement.appendChild(toppingsCell);
+// newTableRowElement.appendChild(instructionsCell);
+// tableElement.appendChild(newTableRowElement);
+
+//but the styling for the table was off and it wasn't as clean 
