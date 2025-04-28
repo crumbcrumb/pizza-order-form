@@ -16,7 +16,7 @@ function handleSubmitForm(event) {
   );
   for (let i = 0; i < pizzaToppingsElement.length; i++) {
     if (pizzaToppingsElement[i].checked) {
-      toppings.push(pizzaToppingsElement[i].labels[0].innerText);
+      toppings.push(pizzaToppingsElement[i].labels[0].textContent);
     }
   }
 
