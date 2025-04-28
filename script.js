@@ -35,7 +35,7 @@ function handleSubmitForm(event) {
 }
 
 
-//instead of insertRow and insertCell i tried
+//instead of insertRow and insertCell i tried this but the styling for the table was off and it wasn't as clean 
 
 // let newTableRowElement = document.createElement("tr")
 // let nameCell = document.createElement("td")
@@ -49,4 +49,3 @@ function handleSubmitForm(event) {
 // newTableRowElement.appendChild(instructionsCell);
 // tableElement.appendChild(newTableRowElement);
 
-//but the styling for the table was off and it wasn't as clean 
