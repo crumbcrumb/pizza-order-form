@@ -6,7 +6,7 @@ submitFormElement.addEventListener("submit", handleSubmitForm);
 function handleSubmitForm(event) {
   event.preventDefault();
   let nameElement = document.getElementById("name").value;
-  let SizeElement = document.getElementById("size").value;
+  let sizeElement = document.getElementById("size").value;
   let instructionsElement = document.getElementById("instructions").value;
 
   let toppings = [];
@@ -27,7 +27,7 @@ function handleSubmitForm(event) {
   let instructionsCell = newRow.insertCell();
 
   nameCell.textContent = nameElement;
-  sizeCell.textContent = SizeElement;
+  sizeCell.textContent = sizeElement;
   toppingsCell.textContent = toppings.join(", ");
   instructionsCell.textContent = instructionsElement;
 
